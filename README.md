@@ -1,56 +1,75 @@
-# Welcome to your Expo app 👋
+# Embarcados Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo de hospedagens alternativas em Santa Catarina, desenvolvido como Atividade 1 da disciplina INE5670 - Desenvolvimento de Sistemas Móveis e Embarcados, da Universidade Federal de Santa Catarina (UFSC), no semestre 2026.2.
 
-## Get started
+O projeto usa React Native, Expo SDK 57 e Expo Router.
 
-1. Install dependencies
+## Proposta
 
-   ```bash
-   npm install
-   ```
+O aplicativo ajuda turistas a encontrar campings, hostels, pensões e outras hospedagens alternativas. A proposta da atividade prevê:
 
-2. Start the app
+- tela inicial com identidade visual e atrações turísticas de Santa Catarina;
+- lista de propriedades ordenada por nome e com filtro por cidade;
+- detalhes da hospedagem com imagens, vídeo, descrição, endereço, preços e contatos;
+- lista persistente de propriedades de interesse;
+- mapa com as propriedades disponíveis;
+- abertura de e-mail, telefone, WhatsApp e aplicativo de mapas pelos dados de cada hospedagem.
 
-   ```bash
-   npx expo start
-   ```
+Os dados das propriedades devem vir de arquivos JSON ou XML, locais ou remotos, sem ficarem escritos diretamente nos componentes.
 
-In the output, you'll find options to open the app in a
+## Requisitos
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Node.js 22.13 ou mais recente;
+- npm;
+- Expo Go em um celular, ou um emulador Android/iOS configurado.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+O iOS Simulator exige macOS. Também é possível executar a versão web em um navegador.
 
-## Get a fresh project
+## Como rodar
 
-When you're ready, run:
+Clone o repositório e entre na pasta do projeto:
 
 ```bash
-npm run reset-project
+git clone https://github.com/GustavoDorow/embarcados-mobile.git
+cd embarcados-mobile
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Instale as dependências:
 
-### Other setup steps
+```bash
+npm install
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Inicie o servidor de desenvolvimento:
 
-## Learn more
+```bash
+npm start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+O terminal mostrará um QR Code para abrir o app no Expo Go. O computador e o celular devem estar na mesma rede. Também é possível iniciar uma plataforma diretamente:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm run android
+npm run ios
+npm run web
+```
 
-## Join the community
+Se a rede local impedir a conexão com o celular, use um túnel:
 
-Join our community of developers creating universal apps.
+```bash
+npx expo start --tunnel
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Estrutura principal
+
+```text
+src/app/       telas e rotas do Expo Router
+src/components componentes reutilizáveis
+src/constants  constantes do aplicativo
+src/hooks      hooks compartilhados
+assets/        imagens, ícones e outros arquivos estáticos
+```
+
+## Licença
+
+Este projeto está disponível sob os termos da licença MIT.

@@ -37,6 +37,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "65a336e7-ef11-44bb-b17f-c946cef04970"
+      }
+    },
+    "owner": "gustavodorows-team"
   }
 }
