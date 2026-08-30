@@ -1,0 +1,58 @@
+{
+  "properties": [
+    {
+      "id": "palm-beach-apart-hotel",
+      "name": "Palm Beach Apart Hotel",
+      "description": "Apart hotel à beira-mar na Praia dos Ingleses, com saída direta para a praia. Possui 25 apartamentos com cozinha completa, sacada com churrasqueira, ar-condicionado, Wi-Fi, limpeza diária e estacionamento privativo.",
+      "address": {
+        "street": "Rua das Gaivotas",
+        "number": "718",
+        "neighborhood": "Ingleses do Rio Vermelho",
+        "city": "Florianópolis",
+        "state": "SC",
+        "postalCode": "88058-500"
+      },
+      "coordinates": {
+        "latitude": -27.4308721,
+        "longitude": -48.396088
+      },
+      "videos": [],
+      "prices": [],
+      "contact": {
+        "email": "reserva@palmbeach.com.br",
+        "phone": "+554833644212",
+        "whatsapp": "+5548991531146"
+      },
+      "website": "https://palmbeach.com.br/",
+      "bookingUrl": "https://hbook.hsystem.com.br/Booking?companyId=600f1191ab41dc30a030be9a",
+      "mapsUrl": "https://www.google.com/maps/place/Palm+Beach+Apart+Hotel/@-27.4308721,-48.396088,16.8z"
+    },
+    {
+      "id": "pousada-mare-de-lua",
+      "name": "Pousada Maré de Lua",
+      "description": "Pousada à beira-mar na Praia da Armação, com acomodações para casais, famílias e grupos. Os quartos possuem opções com geladeira, TV e ar-condicionado.",
+      "address": {
+        "street": "Avenida Antônio Borges dos Santos",
+        "number": "876",
+        "neighborhood": "Praia da Armação",
+        "city": "Florianópolis",
+        "state": "SC",
+        "postalCode": ""
+      },
+      "coordinates": {
+        "latitude": -27.7510922,
+        "longitude": -48.5021957
+      },
+      "videos": [],
+      "prices": [],
+      "contact": {
+        "email": "maredeluapousada@gmail.com",
+        "phone": "+554832375068",
+        "whatsapp": "+554832375068"
+      },
+      "website": "https://www.maredeluapousada.com.br/",
+      "bookingUrl": "https://hbook.hsystem.com.br/booking?companyId=66d9c426d75163e77a97ded0",
+      "mapsUrl": "https://www.google.com/maps/place/Pousada+Mar%C3%A9+de+Lua/@-27.751095,-48.5139436,15z/data=!4m12!1m2!2m1!1shoteis!3m8!1s0x952724578cab6bb5:0x84d7c990c16ca7ae!5m2!4m1!1i2!8m2!3d-27.7510922!4d-48.5021957!16s%2Fg%2F1tfvv34x"
+    }
+  ]
+}

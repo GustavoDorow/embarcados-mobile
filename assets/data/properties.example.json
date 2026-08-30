@@ -1,0 +1,39 @@
+{
+  "properties": [
+    {
+      "id": "identificador-da-hospedagem",
+      "name": "Nome da hospedagem",
+      "description": "Descrição da hospedagem.",
+      "address": {
+        "street": "Nome da rua",
+        "number": "Número",
+        "neighborhood": "Bairro",
+        "city": "Cidade",
+        "state": "SC",
+        "postalCode": "00000-000"
+      },
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "thumbnail": "",
+      "images": [],
+      "videos": [],
+      "prices": [
+        {
+          "description": "Descrição da diária ou acomodação",
+          "amount": 0,
+          "currency": "BRL"
+        }
+      ],
+      "contact": {
+        "email": "contato@exemplo.com",
+        "phone": "+5500000000000",
+        "whatsapp": "+5500000000000"
+      },
+      "website": "https://exemplo.com/",
+      "bookingUrl": "https://exemplo.com/reservas",
+      "mapsUrl": "https://www.google.com/maps"
+    }
+  ]
+}
