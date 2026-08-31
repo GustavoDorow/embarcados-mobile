@@ -10,7 +10,10 @@ export default function HomeScreen() {
         style={styles.logo}
       />
       <Text style={styles.title}>Hospeda SC</Text>
-      <Text>Hospedagens alternativas em Santa Catarina</Text>
+      <Text style={styles.description}>
+        Explore hospedagens em várias cidades de Santa Catarina, veja onde elas
+        estão no mapa e salve suas favoritas para consultar depois.
+      </Text>
 
       <View style={styles.section}>
         <PropertyMap />
@@ -18,7 +21,7 @@ export default function HomeScreen() {
 
       <ScrollView
         horizontal
-        showsHorizontalScrollIndicator={false}
+        showsHorizontalScrollIndicator={true}
         contentContainerStyle={styles.gallery}
         style={styles.section}
       >
@@ -28,6 +31,14 @@ export default function HomeScreen() {
         />
         <Image
           source={require('../../../assets/images/serra-rio-do-rastro.png')}
+          style={styles.photo}
+        />
+        <Image
+          source={require('../../../assets/images/lagoinha-do-leste.png')}
+          style={styles.photo}
+        />
+        <Image
+          source={require('../../../assets/images/vila-germanica.png')}
           style={styles.photo}
         />
       </ScrollView>
@@ -61,5 +72,10 @@ const styles = StyleSheet.create({
     width: 300,
     height: 220,
     borderRadius: 8,
+  },
+  description: {
+    textAlign: 'center',
+    width: '100%',
+    maxWidth: 700,
   },
 });

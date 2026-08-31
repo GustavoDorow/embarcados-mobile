@@ -1,7 +1,8 @@
-import { router, useFocusEffect } from 'expo-router';
+import { useFocusEffect } from 'expo-router';
 import { useCallback, useState } from 'react';
-import { FlatList, Pressable, StyleSheet, Text } from 'react-native';
+import { FlatList, StyleSheet, Text } from 'react-native';
 
+import { PropertyCard } from '@/components/PropertyCard';
 import { getInterestIds } from '@/constants/interests';
 import { properties, Property } from '@/constants/properties';
 
@@ -22,17 +23,7 @@ export default function InterestsScreen() {
       keyExtractor={(property) => property.id}
       contentContainerStyle={styles.list}
       ListEmptyComponent={<Text>Nenhuma hospedagem marcada.</Text>}
-      renderItem={({ item }) => (
-        <Pressable
-          style={styles.item}
-          onPress={() =>
-            router.push({ pathname: '/property/[id]', params: { id: item.id } })
-          }
-        >
-          <Text style={styles.name}>{item.name}</Text>
-          <Text>{item.address.neighborhood}, {item.address.city}</Text>
-        </Pressable>
-      )}
+      renderItem={({ item }) => <PropertyCard property={item} />}
     />
   );
 }
@@ -40,15 +31,6 @@ export default function InterestsScreen() {
 const styles = StyleSheet.create({
   list: {
     padding: 16,
-    gap: 12,
-  },
-  item: {
-    padding: 16,
-    backgroundColor: 'white',
-    borderRadius: 8,
-  },
-  name: {
-    fontSize: 18,
-    fontWeight: 'bold',
+    gap: 16,
   },
 });
