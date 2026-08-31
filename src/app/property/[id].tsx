@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Button, Image, Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { getInterestIds, toggleInterest } from '@/constants/interests';
-import { properties, propertyImages } from '@/constants/properties';
+import { getPropertyImages, properties } from '@/constants/properties';
 
 export default function PropertyDetailsScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -17,6 +17,7 @@ export default function PropertyDetailsScreen() {
   if (!property) return <Text>Hospedagem não encontrada.</Text>;
 
   const address = `${property.address.street}, ${property.address.number} - ${property.address.neighborhood}, ${property.address.city} - ${property.address.state}`;
+  const images = getPropertyImages(property.id);
 
   return (
     <>
@@ -24,9 +25,13 @@ export default function PropertyDetailsScreen() {
       <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.title}>{property.name}</Text>
 
-        {propertyImages[property.id].map((image, index) => (
-          <Image key={index} source={image} style={styles.image} />
-        ))}
+        {images.length ? (
+          images.map((image, index) => (
+            <Image key={index} source={image} style={styles.image} />
+          ))
+        ) : (
+          <Text>Imagens não disponíveis.</Text>
+        )}
 
         <Text>{property.description}</Text>
 

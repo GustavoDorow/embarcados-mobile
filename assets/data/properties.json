@@ -53,6 +53,114 @@
       "website": "https://www.maredeluapousada.com.br/",
       "bookingUrl": "https://hbook.hsystem.com.br/booking?companyId=66d9c426d75163e77a97ded0",
       "mapsUrl": "https://www.google.com/maps/place/Pousada+Mar%C3%A9+de+Lua/@-27.751095,-48.5139436,15z/data=!4m12!1m2!2m1!1shoteis!3m8!1s0x952724578cab6bb5:0x84d7c990c16ca7ae!5m2!4m1!1i2!8m2!3d-27.7510922!4d-48.5021957!16s%2Fg%2F1tfvv34x"
+    },
+    {
+      "id": "costao-do-santinho",
+      "name": "Costão do Santinho Resort",
+      "description": "Resort all inclusive à beira-mar na Praia do Santinho, cercado por Mata Atlântica, dunas e sítios arqueológicos. Reúne piscinas, restaurantes, atividades para famílias, esportes e spa em uma ampla área no norte da Ilha de Santa Catarina.",
+      "address": {
+        "street": "Estrada Vereador Onildo Lemos",
+        "number": "2505",
+        "neighborhood": "Praia do Santinho",
+        "city": "Florianópolis",
+        "state": "SC",
+        "postalCode": "88058-700"
+      },
+      "coordinates": {
+        "latitude": -27.46491,
+        "longitude": -48.38142
+      },
+      "videos": [],
+      "prices": [],
+      "contact": {
+        "email": "reservas@costao.com.br",
+        "phone": "+554832611000",
+        "whatsapp": "+554832612051"
+      },
+      "website": "https://www.costao.com.br/",
+      "bookingUrl": "https://www.costao.com.br/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cost%C3%A3o%20do%20Santinho%20Resort%2C%20Florian%C3%B3polis%2C%20SC"
+    },
+    {
+      "id": "fazzenda-park-resort",
+      "name": "Fazzenda Park Resort",
+      "description": "Resort fazenda all inclusive em Gaspar, no Vale Europeu, instalado em uma área de aproximadamente dois milhões de metros quadrados. Combina mata nativa, lagos, animais, piscinas, gastronomia e programação de lazer para todas as idades.",
+      "address": {
+        "street": "Rua João Mathias Zimmermann",
+        "number": "2299",
+        "neighborhood": "Alto Gasparinho",
+        "city": "Gaspar",
+        "state": "SC",
+        "postalCode": "89113-259"
+      },
+      "coordinates": {
+        "latitude": -26.9810318,
+        "longitude": -48.9282574
+      },
+      "videos": [],
+      "prices": [],
+      "contact": {
+        "email": "contato@fazzenda.com.br",
+        "phone": "+554733979000",
+        "whatsapp": "+554733979000"
+      },
+      "website": "https://www.fazzenda.com.br/",
+      "bookingUrl": "https://reservar.fazzenda.com.br/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fazzenda%20Park%20Resort%2C%20Gaspar%2C%20SC"
+    },
+    {
+      "id": "lk-design-hotel",
+      "name": "LK Design Hotel",
+      "description": "Hotel de design contemporâneo em frente à Beira-Mar Norte, no centro de Florianópolis. Possui acomodações de conceito minimalista, rooftop com piscina climatizada e vista panorâmica, academia, espaços para eventos e o restaurante Osli.",
+      "address": {
+        "street": "Rua Bocaiúva",
+        "number": "1755",
+        "neighborhood": "Centro",
+        "city": "Florianópolis",
+        "state": "SC",
+        "postalCode": "88015-530"
+      },
+      "coordinates": {
+        "latitude": -27.5868693,
+        "longitude": -48.5512627
+      },
+      "videos": [],
+      "prices": [],
+      "contact": {
+        "email": "reservaslkhotel@atriohoteis.com.br",
+        "phone": "+554831122233",
+        "whatsapp": "+554831122233"
+      },
+      "website": "https://lkdesignhotel.com.br/",
+      "bookingUrl": "https://book.omnibees.com/hotelresults?q=12469",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=LK%20Design%20Hotel%2C%20Florian%C3%B3polis%2C%20SC"
+    },
+    {
+      "id": "villa-dozio-hotel-e-cucina",
+      "name": "Villa d'Ozio Hotel e Cucina",
+      "description": "Hotel boutique à beira-mar na Praia Brava, em Itajaí, voltado ao público adulto. A proposta reúne suítes contemporâneas, piscina, spa, lounges e uma cozinha de inspiração italiana e mediterrânea com ingredientes locais.",
+      "address": {
+        "street": "Avenida José Medeiros Vieira",
+        "number": "982",
+        "neighborhood": "Praia Brava",
+        "city": "Itajaí",
+        "state": "SC",
+        "postalCode": "88306-800"
+      },
+      "coordinates": {
+        "latitude": -26.944191,
+        "longitude": -48.629048
+      },
+      "videos": [],
+      "prices": [],
+      "contact": {
+        "email": "reservas@villadozio.com.br",
+        "phone": "+554730838070",
+        "whatsapp": "+5547992778233"
+      },
+      "website": "https://villadozio.com.br/",
+      "bookingUrl": "https://villadozio.letsbook.com.br/reserva/busca",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Villa%20d%27Ozio%20Hotel%20e%20Cucina%2C%20Itaja%C3%AD%2C%20SC"
     }
   ]
 }

@@ -27,16 +27,19 @@ export const properties = (data.properties as Property[]).sort((a, b) =>
   a.name.localeCompare(b.name),
 );
 
-export const propertyImages: Record<string, ImageSourcePropType[]> = {
-  'palm-beach-apart-hotel': [
-    require('../../assets/images/properties/palm-beach-apart-hotel/palm-beach-apart-hotel.jpg'),
-    require('../../assets/images/properties/palm-beach-apart-hotel/palm-beach-apart-hotel-2.jpg'),
-  ],
-  'pousada-mare-de-lua': [
-    require('../../assets/images/properties/pousada-mare-de-lua/pousada-mare-de-lua.png'),
-    require('../../assets/images/properties/pousada-mare-de-lua/pousada-mare-de-lua-2.png'),
-  ],
-};
+const propertyImageContext = require.context(
+  '../../assets/images/properties',
+  true,
+  /\.(png|jpe?g)$/,
+);
+
+export function getPropertyImages(id: string): ImageSourcePropType[] {
+  return propertyImageContext
+    .keys()
+    .filter((path) => path.startsWith(`./${id}/`))
+    .sort()
+    .map((path) => propertyImageContext(path));
+}
 
 export function lowestPrice(property: Property) {
   if (!property.prices.length) return 'Preço não informado';

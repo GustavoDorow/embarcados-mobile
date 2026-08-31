@@ -2,9 +2,9 @@ import { router } from 'expo-router';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import {
+  getPropertyImages,
   lowestPrice,
   Property,
-  propertyImages,
 } from '@/constants/properties';
 
 type PropertyCardProps = {
@@ -12,6 +12,8 @@ type PropertyCardProps = {
 };
 
 export function PropertyCard({ property }: PropertyCardProps) {
+  const images = getPropertyImages(property.id);
+
   return (
     <Pressable
       style={styles.card}
@@ -19,7 +21,13 @@ export function PropertyCard({ property }: PropertyCardProps) {
         router.push({ pathname: '/property/[id]', params: { id: property.id } })
       }
     >
-      <Image source={propertyImages[property.id][0]} style={styles.image} />
+      {images.length ? (
+        <Image source={images[0]} style={styles.image} />
+      ) : (
+        <View style={[styles.image, styles.imagePlaceholder]}>
+          <Text>Imagem não disponível</Text>
+        </View>
+      )}
       <View style={styles.info}>
         <Text style={styles.name}>{property.name}</Text>
         <Text>
@@ -43,6 +51,11 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: 180,
+  },
+  imagePlaceholder: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#ddd',
   },
   info: {
     padding: 12,
